@@ -27,4 +27,4 @@ gitolite-config:
     - mode: 600
     - template: jinja
     - defaults:
-      - annex: {{ gitolite.annex }}
+        annex: {{ gitolite.annex }}
