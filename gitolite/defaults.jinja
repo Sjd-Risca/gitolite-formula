@@ -1,0 +1,8 @@
+{% set gitolite = {
+    'gituser': 'git',
+    'gitdir': '/var/lib/gitolite3',
+    'annex': True
+  }
+%}
+
+{% do gitolite.update(salt['pillar.get']('gitolite')) 

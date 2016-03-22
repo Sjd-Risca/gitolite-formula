@@ -1,0 +1,5 @@
+gitolite:
+  gituser: git
+  gitdir: /var/lib/gitolite3
+  adminkey: ssh-rsa AKSO....saA     # THIS IS REQUIRED!
+  annex: True
