@@ -21,9 +21,9 @@ gitolite-debconf:
 
 gitolite-config:
   file.managed:
-    - name: {{ gitdir }}/.gitolite.rc
+    - name: {{ gitolite.gitdir }}/.gitolite.rc
     - source: salt://gitolite/files/gitolite.rc
-    - user: {{ gituser }}
+    - user: {{ gitolite.gituser }}
     - mode: 600
     - template: jinja
     - defaults:
