@@ -15,7 +15,7 @@ gitolite-debconf:
         'gitolite3/gituser': {'type': 'string', 'value': '{{ gitolite.gituser }}'}
         'gitolite3/gitdir': {'type': 'string', 'value': '{{ gitolite.gitdir }}'}
         'gitolite3/adminkey': {'type': 'string', 'value': '{{ gitolite.adminkey }}'}
-    - required_in:
+    - require_in:
       - pkg: gitolite-software
 # otherwise: /usr/bin/gitolite setup -pk /gitolite-admin.pub
 
