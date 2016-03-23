@@ -3,3 +3,4 @@ gitolite:
   gitdir: /var/lib/gitolite3
   adminkey: ssh-rsa AKSO....saA     # THIS IS REQUIRED!
   annex: True
+  GIT_CONFIG_KEYS: ''
